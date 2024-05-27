@@ -39,14 +39,14 @@ body {
 }
 
 #imgBox {
-    width: 200px;
+    width: 300px;
     height: auto;
+    margin: auto;
     border-radius: 5px;
-    overflow: hidden;
+    
 }
 
 #imgBox img {
-    
     width: 100%;
     padding: 10px;
 }
@@ -63,15 +63,15 @@ body {
 }
 
 .animation-shake {
-    animation: shake;
+    animation-name: shake;
     transition-duration: 500ms;
-    transition-property: ease;
+    transition-property: linear;
     transition-delay: 0;
 }
 @keyframes shake {
     0%{transform: translateX(0);}
-    25%{transform: translateX(2px);}
+    25%{transform: translateX(5px);}
     50%{transform: translateX(0);}
-    75%{transform: translateX(2px);}
+    75%{transform: translateX(5px);}
     100%{transform: translateX(0);}
 }
