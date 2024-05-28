@@ -1,0 +1,101 @@
+:root {
+    --primary: #0e6efd;
+    --secondary: #6b767d;
+    --item-width: 200;
+    --item-height: 100;
+    --item-count: 8;
+ 
+    --animation-duration: 30s;
+    --animation-duration-per-item: calc(var(--animation-duration) / var(--item-count));
+}
+
+body {
+    background-color: 262626;
+    font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.container input {
+    width: 100%;
+    height: 50px;
+    margin: 0 0 30px 0;
+    padding: 10px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+.banner {
+    width: 90%;
+    max-width: 1500px;
+    height: 100px;
+    margin-top: 5rem;
+    margin-inline: auto;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, 
+    rgba(0,0,0,0),
+    rgba(0,0,0,1)20%,
+    rgba(0,0,0,1)80%,
+    rgba(0,0,0,0)
+    );
+}
+
+.item {
+    width: var(--item-width);
+    height: var(--item-height);
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 6px;
+    position: absolute;
+    /* make items responsive to viewport width*/
+    left: max(calc( var(--item-count) * var(--item-width) * 1px), 100%);
+    /*name, duration, timing function, iteration count*/
+    animation: scrollLeft var(--animation-duration) linear infinite;
+}
+
+@keyframes scrollLeft {
+    /*from{} dont need to define start*/
+    to{
+        left: calc(var(--item-width) * -1px); 
+    }
+}
+
+/* duration * item-delay * -1*/
+.item1 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 1) * -1);}
+.item2 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 2) * -1);}
+.item3 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 3) * -1);}
+.item4 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 4) * -1);}
+.item5 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 5) * -1);}
+.item6 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 6) * -1);}
+.item7 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 7) * -1);}
+.item8 {animation-delay: calc( var(--animation-duration-per-item) * (var(--item-count) - 8) * -1);}
