@@ -1,0 +1,12 @@
+.drag-parent {
+    width: 300px;
+    border: 5px solid red;
+    overflow: hidden;
+    touch-action: none; /* Add also this */
+    user-select: none; /* Prevent text highlighting */
+  }
+  
+  .drag-child {
+    width: 1000px;
+    padding: 10px;
+  }
