@@ -1,0 +1,211 @@
+<!--
+https://www.w3.org/WAI/ARIA/apg/patterns/table/examples/sortable-table/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Header Sorted</title>
+    <link rel="stylesheet" href="sortable-table.css">
+</head>
+<body>
+
+    <div class="table-wrap">
+        <table class="sortable">
+          <h1>Void Fragment Farm Tier List</h1>
+          <thead>
+            <tr>
+            <th class="num" aria-sort="ascending">
+                <button>
+                    Rank
+                    <span aria-hidden="true"></span>
+                </button>
+                </th>
+              <th>
+                <button>
+                  Location
+                  <span aria-hidden="true"></span>
+                </button>
+              </th>
+              <th>
+                <button>
+                  Element
+                  <span aria-hidden="true"></span>
+                </button>
+              </th>
+              <th class="num">
+                <button>
+                  Polymer
+                  <span aria-hidden="true"></span>
+                </button>
+              </th>
+              <!--
+              <th class="no-sort">
+                Address
+              </th>-->
+              <th class="num">
+                <button>
+                  Organic
+                  <span aria-hidden="true"></span>
+                </button>
+              </th>
+              <th class="num">
+                <button>
+                  Monomer
+                  <span aria-hidden="true"></span>
+                </button>
+              </th>
+              <th class="num">
+                <button>
+                  Inorganic
+                  <span aria-hidden="true"></span>
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Fortress</td><td>Electric</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">12</td>
+                <td class="num">3</td></tr>
+            <tr><td>2</td><td>Fortress</td><td>Chill</td>
+                <td class="num">13</td>
+                <td class="num">2</td>
+                <td class="num">0</td>
+                <td class="num">0</td></tr>
+            <tr><td>3</td><td>Hagios</td><td>Fire</td>
+                <td class="num">0</td>
+                <td class="num">12</td>
+                <td class="num">3</td>
+                <td class="num">0</td></tr>
+            <tr><td>4</td><td>Vespers</td><td>Non-attribute</td>
+                <td class="num">3</td>
+                <td class="num">4</td>
+                <td class="num">3</td>
+                <td class="num">3</td></tr>
+            <tr><td>5</td><td>White-night Gulch</td><td>Toxic</td>
+                <td class="num">2</td>
+                <td class="num">0</td>
+                <td class="num">13</td>
+                <td class="num">0</td></tr>
+            <tr><td>6</td><td>Agna Desert</td><td>Electric</td>
+                <td class="num">1</td>
+                <td class="num">0</td>
+                <td class="num">14</td>
+                <td class="num">0</td></tr>
+            <tr><td>7</td><td>Fortress</td><td>Chill</td>
+                <td class="num">11</td>
+                <td class="num">0</td>
+                <td class="num">4</td>
+                <td class="num">0</td></tr>
+            <tr><td>8</td><td>White-night Gulch</td><td>Toxic</td>
+                <td class="num">3</td>
+                <td class="num">3</td>
+                <td class="num">3</td>
+                <td class="num">4</td></tr>
+            <tr><td>9</td><td>Sterile Land</td><td>Chill</td>
+                <td class="num">3</td>
+                <td class="num">3</td>
+                <td class="num">4</td>
+                <td class="num">3</td></tr>
+            <tr><td>10</td><td>Sterile Land</td><td>Electric</td>
+                <td class="num">4</td>
+                <td class="num">0</td>
+                <td class="num">11</td>
+                <td class="num">0</td></tr>
+            <tr><td>11</td><td>Hagios</td><td>Fire</td>
+                <td class="num">0</td>
+                <td class="num">11</td>
+                <td class="num">0</td>
+                <td class="num">4</td></tr>
+            <tr><td>12</td><td>Vespers</td><td>Fire</td>
+                <td class="num">13</td>
+                <td class="num">2</td>
+                <td class="num">0</td>
+                <td class="num">0</td></tr>
+            <tr><td>13</td><td>Kingston</td><td>Non-attribute</td>
+                <td class="num">3</td>
+                <td class="num">4</td>
+                <td class="num">3</td>
+                <td class="num">3</td></tr>
+            <tr><td>14</td><td>Echo Swamp</td><td>Fire</td>
+                <td class="num">0</td>
+                <td class="num">14</td>
+                <td class="num">1</td>
+                <td class="num">0</td></tr>
+            <tr><td>15</td><td>Agna Desert</td><td>Non-attribute</td>
+                <td class="num">3</td>
+                <td class="num">3</td>
+                <td class="num">4</td>
+                <td class="num">3</td></tr>
+            <tr><td>16</td><td>Sterile Land</td><td>Fire</td>
+                <td class="num">4</td>
+                <td class="num">3</td>
+                <td class="num">3</td>
+                <td class="num">3</td></tr>
+            <tr><td>17</td><td>Hagios</td><td>Non-attribute</td>
+                <td class="num">3</td>
+                <td class="num">4</td>
+                <td class="num">3</td>
+                <td class="num">3</td></tr>
+            <tr><td>18</td><td>Vespers</td><td>Non-attribute</td>
+                <td class="num">4</td>
+                <td class="num">3</td>
+                <td class="num">3</td>
+                <td class="num">3</td></tr>
+            <tr><td>19</td><td>Vespers</td><td>Chill</td>
+                <td class="num">4</td>
+                <td class="num">0</td>
+                <td class="num">11</td>
+                <td class="num">0</td></tr>
+            <tr><td>20</td><td>Echo Swamp</td><td>Toxic</td>
+                <td class="num">4</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">11</td></tr>
+            <tr><td>21</td><td>Agna Desert</td><td>Electric</td>
+                <td class="num">0</td>
+                <td class="num">13</td>
+                <td class="num">0</td>
+                <td class="num">2</td></tr>
+            <tr><td>22</td><td>White-night Gulch</td><td>Fire</td>
+                <td class="num">0</td>
+                <td class="num">13</td>
+                <td class="num">0</td>
+                <td class="num">2</td></tr>
+            <tr><td>23</td><td>White-night Gulch</td><td>Chill</td>
+                <td class="num">13</td>
+                <td class="num">0</td>
+                <td class="num">1</td>
+                <td class="num">0</td></tr>
+            <tr><td>24</td><td>Sterile Land</td><td>Electric</td>
+                <td class="num">0</td>
+                <td class="num">0</td>
+                <td class="num">12</td>
+                <td class="num">3</td></tr>
+            <tr><td>25</td><td>White-night Gulch</td><td>Toxic</td>
+                <td class="num">0</td>
+                <td class="num">3</td>
+                <td class="num">0</td>
+                <td class="num">12</td></tr>
+            <tr><td>26</td><td>Agna Desert</td><td>Fire</td>
+                <td class="num">0</td>
+                <td class="num">12</td>
+                <td class="num">3</td>
+                <td class="num">0</td></tr>
+            <tr><td>27</td><td>Echo Swamp</td><td>Toxic</td>
+                <td class="num">0</td>
+                <td class="num">2</td>
+                <td class="num">0</td>
+                <td class="num">13</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <img src="void-fragment-farm-tier.webp"> </img>
+    
+</body>
+<script src="sortable-table.js"></script>
+</html>
