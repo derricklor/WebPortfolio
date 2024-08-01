@@ -7,6 +7,11 @@ https://www.w3.org/WAI/content-assets/wai-aria-practices/patterns/table/examples
     top: -30em;
   }
   
+body {
+  background-color: #565656;
+  font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+
   table.sortable td,
   table.sortable th {
     padding: 0.125em 0.25em;
@@ -78,7 +83,11 @@ https://www.w3.org/WAI/content-assets/wai-aria-practices/patterns/table/examples
   }
   
   table.sortable tbody tr:nth-child(odd) {
-    background-color: #ddd;
+    background-color: #b0b0b0;
+  }
+
+  table.sortable tbody tr:nth-child(even) {
+    background-color: #c0c0c0;
   }
   
   /* Focus and hover styling */
