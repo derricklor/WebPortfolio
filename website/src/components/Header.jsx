@@ -26,7 +26,7 @@ function Header({ isDarkTheme, toggleTheme }) {
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                         >
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h1M3 12h1m15.325-4.757l-.707-.707M4.343 19.657l-.707-.707m12.728 0l-.707.707M4.343 4.343l-.707.707M18 12a6 6 0 11-12 0 6 6 0 0112 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 1v2m0 18v2m9-11h2M1 12h2m16-8-1 1M5 19l-1 1m16 0-1-1M5 5 4 4m14 8A6 6 90 116 12a6 6 90 0112 0z" />
                         </svg>
                         {/* Moon Icon (shown in light mode) */}
                         <svg

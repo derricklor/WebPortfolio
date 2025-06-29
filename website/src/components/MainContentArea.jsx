@@ -13,10 +13,10 @@ function MainContentArea() {
                     <li><a href="#" className="hover:text-blue-500 transition-colors duration-300 dark:hover:text-blue-300">Category 3</a></li>
                     <li><a href="#" className="hover:text-blue-500 transition-colors duration-300 dark:hover:text-blue-300">Category 4</a></li>
                 </ul>
-                <div className="bg-red-50 text-red-700 text-sm rounded-md mt-6 p-4 dark:bg-red-900 dark:text-red-200">
+                <div className="bg-red-50 text-red-700 border border-red-200  text-sm rounded-md mt-6 p-4 dark:bg-red-900 dark:text-red-200 dark:border-red-600">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus porro perspiciatis recusandae, hic provident autem nulla odio pariatur quaerat aliquid soluta molestias, et incidunt, ullam blanditiis libero eius tempora numquam.</p>
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 rounded-md text-blue-700 text-sm dark:bg-blue-900 dark:text-blue-200">
+                <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-md text-blue-700 text-sm dark:bg-blue-900 dark:text-blue-200 dark:border-blue-600">
                     <p>This is a small ad or notice section within the sidebar.</p>
                 </div>
             </aside>
@@ -54,7 +54,7 @@ function MainContentArea() {
                     This sidebar contains additional information or widgets. On smaller screens (mobile and tablet),
                     it will stack below the main content. On larger screens (desktop), it will appear to the right.
                 </p>
-                <div className="bg-green-50 p-4 rounded-md text-green-700 text-sm dark:bg-green-900 dark:text-green-200">
+                <div className="bg-green-50 p-4 border border-green-200 rounded-md text-green-700 text-sm dark:bg-green-900 dark:text-green-200 dark:border-green-600">
                     <p>Quick links or related articles could go here.</p>
                 </div>
                 <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-400">

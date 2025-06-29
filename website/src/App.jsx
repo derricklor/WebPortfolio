@@ -73,7 +73,7 @@ function App() {
 
             <MainContentArea />
 
-            <Footer />
+            <Footer isDarkTheme={isDarkTheme} toggleTheme={toggleTheme} />
         </div>
     );
 }
